@@ -26,11 +26,6 @@ public class Registrazione_Audio extends Elemento_Multimediale_Riproducibile imp
     }
 
     @Override
-    public void show() {
-        System.out.println("non si può mostrare");
-    }
-
-    @Override
     public int abbassaVolume() {
         System.out.println("A quanto vuoi aumentare il volume?");
         Scanner scanner = new Scanner(System.in);

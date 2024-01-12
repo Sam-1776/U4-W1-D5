@@ -31,12 +31,6 @@ public class Immagine extends Elemento_Multimediale implements Luminosità {
         return luminosità;
     }
 
-    @Override
-    public void play() {
-        System.out.println("non sono riproducibile");
-    }
-
-    @Override
     public void show() {
         String gL = "";
         for (int i = 0; i < luminosità; i++) {

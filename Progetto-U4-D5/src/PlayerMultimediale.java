@@ -2,6 +2,7 @@ import it.sam.be.classi.Immagine;
 import it.sam.be.classi.Registrazione_Audio;
 import it.sam.be.classi.Video;
 import it.sam.be.superclassi.Elemento_Multimediale;
+import it.sam.be.superclassi.Elemento_Multimediale_Riproducibile;
 
 import java.util.Scanner;
 
@@ -27,9 +28,9 @@ public class PlayerMultimediale {
             if(scelta == 0) break;
             if(scelta >= 1 && scelta <= 5) {
                 if (lettore_multimediale[scelta - 1] instanceof Immagine){
-                    lettore_multimediale[scelta - 1].show();
+                    ((Immagine)lettore_multimediale[scelta - 1]).show();
                 }else {
-                    lettore_multimediale[scelta - 1].play();
+                    ((Elemento_Multimediale_Riproducibile) lettore_multimediale[scelta - 1]).play();
                 }
             } else {
                 System.out.println("Scelta non valida");

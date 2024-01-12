@@ -31,11 +31,6 @@ public class Video extends Elemento_Multimediale_Riproducibile implements Lumino
     }
 
     @Override
-    public void show() {
-        System.out.println("non si può mostrare");
-    }
-
-    @Override
     public int abbassaVolume() {
         System.out.println("A quanto vuoi abbassare il volume?");
         Scanner scanner = new Scanner(System.in);

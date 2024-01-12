@@ -7,6 +7,7 @@ public abstract class Elemento_Multimediale_Riproducibile extends Elemento_Multi
         super(titolo);
         this.durata = durata;
     }
+    public abstract void play();
 
 
 }
