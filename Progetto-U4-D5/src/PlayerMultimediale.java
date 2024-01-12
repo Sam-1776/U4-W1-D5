@@ -36,6 +36,7 @@ public class PlayerMultimediale {
                 System.out.println("Scelta non valida");
             }
         }
+        scanner.close();
 
     }
 
